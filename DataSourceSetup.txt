@@ -1,0 +1,21 @@
+localhost:4848
+
+copiar mysql connector a carpeta Glassfish
+
+restart glassfish en services Netbeans
+
+Crear StorePool em JDBC Connection Pools
+
+-Resouce Type = DataSource
+-Database Driver Vendor = Mysql
+NEXT
+
+Servername = localhost
+DatabaseName
+URL url jdbc:mysql://:3306/Store
+user = root
+password = root
+
+Crear jdbc/StoreDS en JDBC Resource
+ToolName StorePool
+OK
