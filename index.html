@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DB</title>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCmec-mU4ZN1m9_KiKZPFByKf9rtZUTSNw",
+    authDomain: "testdb-32da5.firebaseapp.com",
+    databaseURL: "https://testdb-32da5.firebaseio.com",
+    projectId: "testdb-32da5",
+    storageBucket: "",
+    messagingSenderId: "296256911462",
+    appId: "1:296256911462:web:d440aa8a16f1798d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Codigo :</td>
+			<td><input type="text" name="codigo" id="pro_cod"></td>
+		</tr>
+		<tr>
+			<td>Nombre :</td>
+			<td><input type="text" name="nombre" id="pro_nom"></td>
+		</tr>
+		<tr>
+			<td>Stock :</td>
+			<td><input type="text" name="stock" id="pro_stock"></td>
+		</tr>
+		<tr>
+			<td>Precio :</td>
+			<td><input type="text" name="precio" id="pro_pre"></td>
+		</tr>
+		<tr>
+			<td>Categoria :</td>
+			<td>
+				<select name="categoria" id="pro_cat">
+					<option value="0">Calzado</option>
+					<option value="1">Pantalon</option>
+					<option value="2">Camisa</option>
+					<option value="3">Hoddie</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

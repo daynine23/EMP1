@@ -34,7 +34,8 @@ public class Demo01 {
         List<Cliente> listaCliente  = consultarPorNombre("A");
         
         for(Cliente cliente:listaCliente){
-            System.out.println(cliente.getDocumento() + " - " +
+            System.out.println(
+                    cliente.getDocumento() + " - " +
                     cliente.getNombre() + " - " +
                     cliente.getDireccion() + " - " +
                     cliente.getCategoriaCliente().getNombre());

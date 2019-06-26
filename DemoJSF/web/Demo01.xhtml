@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:messages id="msg" globalOnly="true" style="color:red" />
+            <h:panelGrid columns="2">
+            <h:outputText value="Numero 1" />
+            <h:inputText value="#{demo01MB.numero1}"/>
+            <h:outputText value="Numero 2" />
+            <h:inputText value="#{demo01MB.numero2}"/>
+            <h:outputText value="Resultado" />
+            <h:inputText  id="resultado" disabled="true" style="background-color:yellowgreen" value="#{demo01MB.resultado}"/>
+            
+            <h:panelGroup>
+                <h:commandButton value="Calcular" action="#{demo01MB.calcular()}" >
+                    <f:ajax execute="@form" render="resultado msg" />
+                </h:commandButton>
+            </h:panelGroup>
+            </h:panelGrid>
+         
+        </h:form>
+    </h:body>
+</html>
+
