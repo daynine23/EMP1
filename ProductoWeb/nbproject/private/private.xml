@@ -3,16 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/AlumnoDG/Music/ProductoWeb/web/cabecera.jsp</file>
-            <file>file:/D:/AlumnoDG/Music/ProductoWeb/src/java/controller/ProductoController.java</file>
-            <file>file:/D:/AlumnoDG/Music/ProductoWeb/web/Producto.jsp</file>
-            <file>file:/D:/AlumnoDG/Music/ProductoWeb/src/java/util/ConexionBD.java</file>
-            <file>file:/D:/AlumnoDG/Music/ProductoWeb/web/resultado_consulta_producto.jsp</file>
-            <file>file:/D:/AlumnoDG/Music/ProductoWeb/src/java/controller/EditProduct.java</file>
-            <file>file:/D:/AlumnoDG/Music/ProductoWeb/web/index.jsp</file>
-            <file>file:/D:/AlumnoDG/Music/ProductoWeb/web/ManagerEditProducto.jsp</file>
-            <file>file:/D:/AlumnoDG/Music/ProductoWeb/web/EditProducto.jsp</file>
-            <file>file:/D:/AlumnoDG/Music/ProductoWeb/web/index.html</file>
+            <file>file:/D:/NetBeansProy/GitHub/EMP1/ProductoWeb/src/java/dao/CategoriaProductoDAO.java</file>
+            <file>file:/D:/NetBeansProy/GitHub/EMP1/ProductoWeb/src/java/services/ProductoServices.java</file>
+            <file>file:/D:/NetBeansProy/GitHub/EMP1/ProductoWeb/web/resultado_consulta_producto.jsp</file>
+            <file>file:/D:/NetBeansProy/GitHub/EMP1/ProductoWeb/src/java/controller/ProductoController.java</file>
+            <file>file:/D:/NetBeansProy/GitHub/EMP1/ProductoWeb/web/Producto.jsp</file>
+            <file>file:/D:/NetBeansProy/GitHub/EMP1/ProductoWeb/web/NuevoProducto.jsp</file>
+            <file>file:/D:/NetBeansProy/GitHub/EMP1/ProductoWeb/src/java/dao/ProductoDAO.java</file>
         </group>
     </open-files>
 </project-private>
