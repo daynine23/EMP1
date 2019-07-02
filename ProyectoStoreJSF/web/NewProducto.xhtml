@@ -15,7 +15,8 @@
             <h1>Sistema Store</h1>
             <h2>Producto Nuevo</h2>
                 </center>
-            </div> 
+            </div>
+        <center>
         <h:form class="form-horizontal" > 
    
     <h:messages id="msg" globalOnly="true" style="color:red" />
@@ -52,7 +53,8 @@
         <div class="col-sm-4">   
             
             <h:selectOneMenu class="form-control">
-                <f:selectItem value="#{storeMB.consultaCategoria()}" itemValue="#{productoEntities.categoriaProductoEntities}" />
+                <f:selectItem  itemLabel="Calzado" itemValue="#{productoEntities.categoriaProductoEntities}" />
+                <f:selectItem  itemLabel="Camisas" itemValue="#{productoEntities.categoriaProductoEntities}" />
             </h:selectOneMenu>
         
         </div>
@@ -65,5 +67,6 @@
     </div>
   
   </h:form>
+            </center>
     </h:body>
 </html>
