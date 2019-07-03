@@ -10,7 +10,7 @@ and open the template in the editor.
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
     <h:head>
-        <title>Consultar Producto</title>
+        <title>Consultar Categoria Producto</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         </link>
@@ -19,7 +19,7 @@ and open the template in the editor.
         <div class="jumbotron text-center">
                 <center>
             <h1>Sistema Store</h1>
-            <h2>Consultar Producto</h2>
+            <h2>Consultar Categoria Producto</h2>
                 </center>
         </div>
         
@@ -27,40 +27,16 @@ and open the template in the editor.
           <center>
      <input type="hidden" id="accion" name="accion" value="" />    
      <label for="">Nombre: </label>
-     <h:inputText id="txtConsultarNombre" value="#{storeMB.p.nombre}" />    
+     <h:inputText id="txtConsultarNombre" value="#{storeMB.cat.id}" />    
  
-     <p:commandButton value="Consultar" actionListener="#{storeMB.traerProductos()}" >
+     <p:commandButton value="Consultar" actionListener="#{storeMB.buscarCategoria()}" update="txtCategoria">
       
      </p:commandButton>
+     
+     <h:inputText id="txtCategoria" value="#{storeMB.cat.nombre}" /> 
 
          
           </center>
-<!-- TABLA-->
-
-      
-      <p:dataTable >
-            <p:column headerText="Codigo">
-                <h:outputText value="#{storeMB.p.codigo}" />
-            </p:column>
-
-            <p:column headerText="Nombre">
-                <h:outputText value="#{storeMB.p.nombre}" />
-            </p:column>
-
-            <p:column headerText="Stock">
-                <h:outputText value="#{storeMB.p.stock}" />
-            </p:column>
-
-            <p:column headerText="Precio">
-                <h:outputText value="#{storeMB.p.precio}" />
-            </p:column>
-          
-            <p:column headerText="Categoria">
-                <h:outputText value="#{storeMB.p.categoriaProductoEntities.nombre}" />
-            </p:column>
-        </p:dataTable>
-
-
-        </h:form>
+              </h:form>
     </h:body>
 </html>
